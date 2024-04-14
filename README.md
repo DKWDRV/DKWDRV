@@ -225,7 +225,7 @@ Supported cheat types:
 |C2 |MemoryCopy |
     
 ## Technical documentation
-Some initial documentation is now online. You can view it [here](https://github.com/wisi-w/DKWDRV/blob/main/tech_docs.md).
+Some initial documentation is now online. You can view it [here](https://github.com/DKWDRV/DKWDRV/blob/main/tech_docs.md).
 With time it will be updated so make sure to check regularly.
 
 ## Old Repo
