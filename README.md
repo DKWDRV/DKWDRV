@@ -83,6 +83,9 @@ The first time you run a game it will try to create a config for it by analyzing
 
 ## Changelog
 
+**1.7.5**
+- USB cmd implemented. Fixed a lot of games using ReadToc cmd. (Rockan Complete Works etc....)
+
 **1.7.4**
 - BETA USB Support
 - Misc Bug Fixes
