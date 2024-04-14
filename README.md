@@ -68,9 +68,12 @@ The first time you run a game it will try to create a config for it by analyzing
 - XA/CDDA missing is a known issue, they will be released later on. You can create report issues on here for different games.
 - Many subq protected games run fine but there might be some rares cases when magic word patching won't work well. See if you can patch the game in that case.
 - Same games load quickly because seek times are set to minimal. To be updated in the future.
-
+- If you use a HDMI adapter remember to toggle the setting in general VIDEO options. Sometimes the adapter and TV can get unsynced between video mode changes causing a NO SIGNAL in TV. Reset reset the adapter.
 
 **Future Features Planned (no ETA)**
+- Hgher videomodes ingame (investigating)
+- XA/CDDA Audio (partly done)
+- Disc Swap (partly done)
 - VMC from USB
 - IGR
 - Custom BIOS
