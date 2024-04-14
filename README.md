@@ -133,7 +133,7 @@ A full list of internal configs with proper documentation will be coming in the 
 
 
 ## Usage
-Download the lastest release from the [release](https://github.com/wisi-w/DKWDRV/releases/latest) page.
+Download the lastest release from the [release](https://github.com/DKWDRV/DKWDRV/releases/latest) page.
 Simple run the ELF files in any way you can. Make sure that you have a valid PS1 disc inserted prior to running.
 Users must configure options for the fixes and features that they want. If they want to save changes they have to use the Save Game Config option in the menu. Selection Run will boot into the game.
 Most options are easy to understand. Better naming and documentation coming soon.
