@@ -20,12 +20,14 @@ This is stage 1 of releasing. Since it is impossible to test many games we are r
 
 
 **Limitations**
+- USB must be FAT32.
 - All .bin tracks must be merged. Use IsoBuster or CDMage.
 - .cue file must be provided and the .bin name must match the main binary file.
 - All bin dumps must be 2352 sector sizes.
 - All games must be defragemented! You can still proceed but be warned it can crash anytime.
 - No XA/CDDA sounds effect yet. That is a WIP and it will be added in the future. This means that BMG, FMV audio
 and other SFX might be missing from the game.
+- No disc swapping implemented yet but planned and doable.
 
 **Usage**
 
