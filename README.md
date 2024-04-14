@@ -51,7 +51,7 @@ USB
             ....    
 ```
 
-Run DKWDRV.ELF and select "Select USB Game".
+Run DKWDRV.ELF from [release](https://github.com/DKWDRV/DKWDRV/releases/latest) and select "Select USB Game".
 Pressing [] on a game allows you to selection options for it. 
 The first time you run a game it will try to create a config for it by analyzing the game files.
 
