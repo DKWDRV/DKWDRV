@@ -62,6 +62,7 @@ The first time you run a game it will try to create a config for it by analyzing
 **Troubleshooting**
 - Remember that this version is VERY BETA. It is still WIP.
 - Try different USB.
+- Try USB directly (no usb hub or extra usb type device connected at same time).
 - Verify game structure and installation is correct.
 - Verify game is defragmented.
 - Play around with game options, setting VERSTR to game default region is a good idea.
@@ -84,7 +85,7 @@ The first time you run a game it will try to create a config for it by analyzing
 ## Changelog
 
 **1.7.5**
-- USB cmd implemented. Fixed a lot of games using ReadToc cmd. (Rockan Complete Works etc....)
+- USB cmd implemented. Fixed a lot of games using ReadToc cmd. (Rockam Complete Works etc....)
 
 **1.7.4**
 - BETA USB Support
