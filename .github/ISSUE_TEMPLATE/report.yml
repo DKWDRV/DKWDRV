@@ -1,0 +1,72 @@
+name: Issue report
+description: Create a report to help us improve DKWDRV
+title: "[ISSUE]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Issue report form:
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checks
+      description: "Check before posting"
+      options:
+        - label: I have checked [__existing issues__](https://github.com/DKWDRV/DKWDRV/issues) for duplicates and found none
+        - label: I am using a build downloaded from [this repository](https://github.com/DKWDRV/DKWDRV/releases)
+        - label: my issue is not related to missing CDDA/XA audio (for that, report [here](https://github.com/DKWDRV/DKWDRV/issues/1)
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Describe the issue
+      description: A clear and concise description of what the issue is.
+      placeholder: My issue is...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Program setup
+        > (please complete the following information):
+
+  - type: input
+    id: console
+    attributes:
+      label: Console model
+      description: you can see it on the console sticker or inside OSDSYS (press triangle on main menu)
+      placeholder: SCPH-?????
+    validations:
+      required: true
+
+  - type: input
+    id: ver
+    attributes:
+      label: "Program version"
+      description: ""
+      placeholder: "eg: v1.7.5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: changes
+    attributes:
+      label: "System modifications"
+      description: "Aditional non-standard changes that are applied to the console"
+      multiple: true
+      options:
+        - Modchip
+        - MechaPWN
+        - LensChanger
+
+  - type: textarea
+    id: context-and-data
+    attributes:
+      label: Context and extra information
+      description: Information about affected features and expected behavior
+      placeholder: "running a game under x circumstances cause z issue."
+    validations:
+      required: false
