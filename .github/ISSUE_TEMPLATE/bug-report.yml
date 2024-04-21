@@ -1,0 +1,36 @@
+name: 🐛 Bug Report
+description: Create a report to help us improve
+title: "[ISSUE]: Game [SLXX-XXXXX] crash..."
+labels: [bug]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Disclaimer:
+        Before submitting, please ensure you've completed the following checklist:
+        
+        - [ ] I have confirmed that my issue is unrelated to sound (it's a known issue).
+        - [ ] My USB drive is formatted as FAT32 and the game image is defragmented.
+        - [ ] I have provided the game's link to the redump.org database.
+        - [ ] The game checksum matches the one on redump.org.
+        - [ ] I have attached 2 screenshots of the Debug Screens.
+        - [ ] I have searched for duplicate issues and found none.
+
+  - type: input
+    id: game_id
+    attributes:
+      label: Game Link or Serial (Redump.org)
+      description: Enter the game's serial number or link to its redump.org page.
+      placeholder: SLPS-99999 http://redump.org/disc/2/
+    validations:
+      required: true
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Describe the Issue
+      description: Provide a clear and concise description of the issue, and attach debug screenshots below.
+      placeholder: My issue is...
+    validations:
+      required: true
