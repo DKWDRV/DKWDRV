@@ -1,0 +1,22 @@
+name: 🚀 Feature Request
+description: Suggest an idea for this project
+title: "[FR]"
+labels: [enhancement]
+
+body:
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checks
+      description: "Please check before posting"
+      options:
+        - label: I have reviewed existing [feature requests](https://github.com/DKWDRV/DKWDRV/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement+) for duplicates and found none.
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Describe the Feature Request
+      description: "Is your feature request related to a problem? Please describe."
+      placeholder: "Please implement [...]"
+    validations:
+      required: false
