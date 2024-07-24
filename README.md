@@ -1,4 +1,7 @@
+
+
 # DKWDRV
+[![Github All Releases](https://img.shields.io/github/downloads/DKWDRV/DKWDRV/total.svg)]()
 ## Unified Single PS1DRV Replacement, compatible with mostly all PS2 models. 
 
 DKWDRV is a replacement for the original PS1DRV of Playstation 2 consoles. 
@@ -12,103 +15,11 @@ Users are welcome to submit issues or request features.
 With time more details and documentation about PS1 operation in PS2 mode will be provided.
 
 
-## USB Loading 
-
-The project has been delayed due to insane technical difficulties in implementing the emulation code and especially debugging. 
-
-This is stage 1 of releasing. Since it is impossible to test many games we are releasing in the hope to gather bug reports and improve the current state. After this stage we will implement XA/CDDA audio. A POC for it has proven to be successful so far.
-
-
-**Limitations**
-- USB must be FAT32.
-- All .bin tracks must be merged. Use IsoBuster or CDMage.
-- .cue file must be provided and the .bin name must match the main binary file.
-- All bin dumps must be 2352 sector sizes.
-- All games must be defragemented! You can still proceed but be warned it can crash anytime.
-- No XA/CDDA sounds effect yet. That is a WIP and it will be added in the future. This means that BMG, FMV audio
-and other SFX might be missing from the game.
-- No disc swapping implemented yet but planned and doable.
-
-**Usage**
-
-Create a folder called "DKWDRV" in root of USB.
-Inside it create a folder named "BIN".
-Inside "BIN" create folder for each game and inside each game put the bin/cue files.
-You can also place CHEATS.TXT for the game.
-Example:
-
-```
-USB
-    DKWDRV
-        BIN
-            Crash Bandicoot
-                Crash Bandicoot.bin
-                Crash Bandicoot.cue
-
-            Crash Bandicoot 2 - Cortex Strikes Back
-                Crash Bandicoot 2 - Cortex Strikes Back.bin
-                Crash Bandicoot 2 - Cortex Strikes Back.cue
-                CHEATS.TXT
-
-            ....    
-```
-
-Run DKWDRV.ELF from [release](https://github.com/DKWDRV/DKWDRV/releases/latest) and select "Select USB Game".
-Pressing [] on a game allows you to selection options for it. 
-The first time you run a game it will try to create a config for it by analyzing the game files.
+<br>
 
 
 
-**Troubleshooting**
-- Remember that this version is VERY BETA. It is still WIP.
-- Try different USB.
-- Try USB directly (no usb hub or extra usb type device connected at same time).
-- Verify game structure and installation is correct.
-- Verify game is defragmented.
-- Play around with game options, setting VERSTR to game default region is a good idea.
-- XA/CDDA missing is a known issue, they will be released later on. You can create report issues on here for different games.
-- Many subq protected games run fine but there might be some rares cases when magic word patching won't work well. See if you can patch the game in that case.
-- Same games load quickly because seek times are set to minimal. To be updated in the future.
-- If you use a HDMI adapter remember to toggle the setting in general VIDEO options. Sometimes the adapter and TV can get unsynced between video mode changes causing a NO SIGNAL in TV. Reset reset the adapter.
-
-**Future Features Planned (no ETA)**
-- Hgher videomodes ingame (investigating)
-- XA/CDDA Audio (partly done)
-- Disc Swap (partly done)
-- VMC from USB
-- IGR
-- Custom BIOS
-- ....
-
-
-
-## Changelog
-
-**1.7.5**
-- USB cmd implemented. Fixed a lot of games using ReadToc cmd. (Rockam Complete Works etc....)
-
-**1.7.4**
-- BETA USB Support
-- Misc Bug Fixes
-
-**1.7.2**
-- Fixed an IOP init bug which might have impacted boot up on some systems.
-- Allows config saving for PSX.EXE games with no SYSTEM.CNF
-- Memory card 1 or 2 can be selected for saving game config.
-- Config and cheats are now searched in both slots instead of just first slot.
-- AutoDiag is enabled if found in config.
-- Added and improved documentation.
-- User warning if disc not valid.
-- Controller input from both slots.
-- Limited mecha config to possible values and added some info for them.
-- Fixed more minor bugs.
-
-
-**1.7.1**
-- Fixed a race condition causing crash on game boot in some PS2 models.
-- Added Sprite Filtering option.
-- Libcrypt patching. DECKARD ONLY
-- Fixed some small bugs.
+<br>
 
 ## Features
 
@@ -141,6 +52,8 @@ The first time you run a game it will try to create a config for it by analyzing
 A full list of internal configs with proper documentation will be coming in the future.
 
 
+<br>
+
 ## Usage
 Download the lastest release from the [release](https://github.com/DKWDRV/DKWDRV/releases/latest) page.
 Simple run the ELF files in any way you can. Make sure that you have a valid PS1 disc inserted prior to running.
@@ -152,7 +65,170 @@ Your model, DKWDRV version, type of media, id, ids, redump links, modchip everyt
 "Does not work" and "Black screen" are horrible reports!
 Remember to also note the information in the "INFO" section of DKWDRV. Make sure to always use the latest version.
 
+
+<br>
+<br>
+
+
+## USB Loading 
+
+The project has been delayed due to insane technical difficulties in implementing the emulation code and especially debugging. 
+
+<strike>This is stage 1 of releasing. Since it is impossible to test many games we are releasing in the hope to gather bug reports and improve the current state. After this stage we will implement XA/CDDA audio. A POC for it has proven to be successful so far.</strike>
+
+Thanks to the amazing support of the community with the issues we have reached stage 2 where with 1.7.6 emulation should be heavily improved. There are still some edge cases waiting to be solved. At the moment issues regarding regressions are welcomed.
+
+
+<details>
+  <summary>Usage</summary>
+
+<br>
+
+Create a folder called "DKWDRV" in root of USB.
+Inside it create a folder named "BIN".
+Inside "BIN" create folder for each game and inside each game put the bin/cue files (merged) (see Limitations for more info).
+You can also place CHEATS.TXT for the game.
+Example:
+
+```
+USB
+    DKWDRV
+        BIN
+            Crash Bandicoot
+                Crash Bandicoot.bin
+                Crash Bandicoot.cue
+
+            Crash Bandicoot 2 - Cortex Strikes Back
+                Crash Bandicoot 2 - Cortex Strikes Back.bin
+                Crash Bandicoot 2 - Cortex Strikes Back.cue
+                CHEATS.TXT
+
+            ....    
+```
+
+Run DKWDRV.ELF from [release](https://github.com/DKWDRV/DKWDRV/releases/latest) and select "Select USB Game".
+Pressing [] on a game allows you to selection options for it. 
+The first time you run a game it will try to create a config for it by analyzing the game files.
+
+</details>
+
+
+<details>
+  <summary>Limitations</summary>
+
+<br>
+
+- USB must be FAT32.
+- All .bin tracks must be merged. Use IsoBuster or CDMage.
+- .cue file must be provided and the .bin name must match the main binary file.
+- All bin dumps must be 2352 sector sizes.
+- All games must be defragemented! You can still proceed but be warned it can crash anytime.
+- No XA/CDDA sounds effect yet. That is a WIP and it will be added in the future. This means that BMG, FMV audio
+and other SFX might be missing from the game.
+- No disc swapping implemented yet but planned and doable.
+
+</details>
+
+
+<details>
+  <summary>Troubleshooting</summary>
+
+<br>
+
+- Remember that this version is VERY BETA. It is still WIP.
+- Try different USB.
+- Try USB directly (no usb hub or extra usb type device connected at same time).
+- Verify game structure and installation is correct.
+- Verify game is defragmented.
+- Play around with game options, setting VERSTR to game default region is a good idea.
+- XA/CDDA missing is a known issue, they will be released later on. You can create report issues on here for different games.
+- Many subq protected games run fine but there might be some rares cases when magic word patching won't work well. See if you can patch the game in that case.
+- Same games load quickly because seek times are set to minimal. To be updated in the future.
+- If you use a HDMI adapter remember to toggle the setting in general VIDEO options. Sometimes the adapter and TV can get unsynced between video mode changes causing a NO SIGNAL in TV. Reset reset the adapter.
+
+
+</details>
+
+<br>
+
+## Future Features Planned (no ETA)
+- Higher videomodes ingame (investigating)
+- XA/CDDA Audio (partly done)
+- Disc Swap (partly done)
+- VMC from USB
+- IGR
+- Custom BIOS
+- ....
+
+
+<br>
+
+## Changelog
+
+<details>
+  <summary>1.7.6</summary>
+    
+<br>
+
+- Improved USB reset and detection code.
+- Improved error handling display information.
+- USB - Play cmd bugfixes (Final Doom, AZITO, Mortal Kimbar 3 ingame, games using CCDA tracks)
+- USB - Antipiracy check fixes (Um Jammer Lammy, Saru Get You, games using APV1/2 protection)
+- USB - Major DMA changes (fixes FMV freeze, black screens, impacts all games)
+</details>
+
+<details>
+  <summary>1.7.5</summary>
+
+<br>
+
+- USB cmd implemented. Fixed a lot of games using ReadToc cmd. (Rockman Complete Works etc....)
+</details>
+
+<details>
+  <summary>1.7.4</summary>
+
+<br>
+
+- BETA USB Support
+- Misc Bug Fixes
+</details>
+
+<details>
+    <summary>1.7.2</summary>
+
+<br>
+
+- Fixed an IOP init bug which might have impacted boot up on some systems.
+- Allows config saving for PSX.EXE games with no SYSTEM.CNF
+- Memory card 1 or 2 can be selected for saving game config.
+- Config and cheats are now searched in both slots instead of just first slot.
+- AutoDiag is enabled if found in config.
+- Added and improved documentation.
+- User warning if disc not valid.
+- Controller input from both slots.
+- Limited mecha config to possible values and added some info for them.
+- Fixed more minor bugs.
+
+</details>
+
+<details>
+    <summary>1.7.1</summary>
+
+<br>
+
+- Fixed a race condition causing crash on game boot in some PS2 models.
+- Added Sprite Filtering option.
+- Libcrypt patching. DECKARD ONLY
+- Fixed some small bugs.
+</details>
+
 ## User Configs
+<details>
+  <summary>Show detailed info for user configs</summary>
+
+<br>
+
 All user per game configs are stored in the memory card. Each game will create it's own save which can be managed from OSDSYS too in case you want to copy or delete it.
 The reason for having a save per game and not all configs inside a main save dir is because with many files OSDSYS won't copy or delete the main file.
 The main file will have a formatted game copy. For example Crash Bandicoot will have SCUS-94900 as game id but the save folder will be "SCUS94900".
@@ -171,17 +247,33 @@ mc0:
 ```
 In order to create the folder automatically you need to run Save Game config at least once.
 If many games with PSX.EXE and unsure which is which you can find it out by the hex value of CRC32 in the filename. Extract PSX.EXE from your disc in a PC and calculate it's CRC32. 7zip right click context menu would do the job just fine. Select CRC SHA and in submenu CRC32.
+</details>
+
+<br>
 
 ## DECKARD button combos
 For DECKARD consoles users can press specific combos even while ingame.
+<details>
+  <summary>Show button combos</summary>
+
+<br>
+
 - L1 + L2 + R1 + R2  + Any DPAD will live adjust screen offsets.
 - L1 + L2 + R1 + R2  + SELECT will toggle game cheats. Sometimes it may be useful to have a cheat active only at certain parts of the game. The combo can disable and enables all applied cheats.
 - L1 + L2 + R1 + R2  + TRIANGLE Will toggle Polygon MMAG filtering 2. Just 0 and 1
 - L1 + L2 + R1 + R2  + CROSS(X) Will toggle Polygon MMIN filtering. Up to 7 values can be used. Once 7 is reached it's wraps back to 0.
 - L1 + L2 + R1 + R2  + SQUARE Will toggle Sprite MMAG filtering 2. Just 0 and 1. Results vary. Original drivers was never applying filtering to sprites.
 - L1 + L2 + R1 + R2  + CIRCLE Will toggle Sprite MMIN filtering. Up to 7 values can be used. Once 7 is reached it's wraps back to 0. Results vary. Original drivers was never applying filtering to sprites.
+</details>
+
+<br>
 
 ## Cheats
+<details>
+  <summary>Show detailed cheats info</summary>
+
+<br>
+
 For DECKARD consoles only cheats can be applied. Cheats must be placed inside memory folder with the game name. Users can save general config to automatically create this folder. At the root of the folder a CHEATS.TXT must be present for cheats to show. Refer to "User Configs" for more info on how to find the save folder.
 The desired cheats must be enabled from the menu every time prior to booting the game.
 Cheats are applied every vblank.
@@ -232,9 +324,25 @@ Supported cheat types:
 |50 |Slide  |
 |53 |ExtImprovedSlide  |
 |C2 |MemoryCopy |
-    
+
+</details>
+
+<br>
+
+## Supporting the project
+If you really happen to like what we have done here, and you are so amazed from you it you can help us move forward faster. 
+There are several this can be done:
+
+<br>
+
+- Donations (some people offered donations before but now we have a way for them)
+    - [![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/DKWDRV)
+- Testing and documenting problematic games and features. There are so much games out there it's impossible to test everything.
+  
+<br>
+
 ## Technical documentation
-Some initial documentation is now online. You can view it [here](https://github.com/DKWDRV/DKWDRV/blob/main/tech_docs.md).
+Some initial documentation is now online. You can view it [here](https://github.com/DKWDRV/DKWDRV/blob/main/docs/tech_docs.md).
 With time it will be updated so make sure to check regularly.
 
 ## Old Repo
