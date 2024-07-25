@@ -1,0 +1,86 @@
+name: Issue report
+description: Create a issue report for confirming (not)working games or features.
+title: "[ISSUE]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### __Disclaimer:__
+        Issue reports for users who do not give as much info as possible or the bare minimum (game id, region, name, etc) will be ignored.
+        Issue reports in different languages than English will be ignored unless side by side translation to English is provided.
+        Issue reports expecting us to know the game in detail and expecting us to tell right away what is wrong will be ignored.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checks
+      description: "Check before posting"
+      options:
+        - label: I have checked existing [__DKWDRV issues__](https://github.com/DKWDRV/DKWDRV/issues) for duplicates and found none.
+        - label: I am using [latest version](https://github.com/DKWDRV/DKWDRV/releases)
+        - label: CD/USB : I have checked my game redump hashes/verified it is a good dump.
+        - label: USB : I have merged the bin tracks (if game has several ones).
+        - label: USB : I have made sure that game is defragemented. You can boot even fragemented games but 99% chance of random failure.
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Describe the issue
+      description: A clear and concise description of what the issue is. As much details as possible. We don't know your game bosses!
+      placeholder: My issue is...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Configuration
+        > (please complete the following information):
+
+
+  - type: input
+    id: console_info
+    attributes:
+      label: Console model and type
+      description: You can see it on sticker or Triangle on OSDSYS and at the INFO section of main menu. 
+      placeholder: SCPH/DESR-????? PGIF/DECKARD
+    validations:
+      required: true
+
+  - type: input
+    id: console_details
+    attributes:
+      label: Console details
+      description: Tell us extra info about your console.
+      placeholder: Modchip XYZ /Mechapwn...
+    validations:
+      required: false
+
+  - type: input
+    id: dkwdrv_ver
+    attributes:
+      label: "DKWDRV"
+      description: "You can see this in INFO section at main menu of DKWDRV"
+      placeholder: "eg: DKWDRV 1.7.6"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: "Tell us what method are you trying to run the game from. CD or USB."
+      multiple: true
+      options:
+        - CD
+        - USB
+        - NA/Other
+    
+  - type: textarea
+    id: context-and-data
+    attributes:
+      label: Context and extra information
+      description: Information about affected games (Game name, [Game ID], link to redump.org) and expected behavior
+      placeholder: "eg: Game affected is Star Wars: Episode I: The Phantom Menace (Rev 1) [SLUS_008.84, ], http://redump.org/disc/67704/"
+    validations:
+      required: false
