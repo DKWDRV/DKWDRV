@@ -26,7 +26,7 @@ body:
   - type: textarea
     id: context-and-data
     attributes:
-      label: Context and extra information
+      label: Context and extra information for the game (if applicable)
       description: Information about affected games (Game name, [Game ID], link to redump.org) and expected behavior.
       placeholder: "eg: Game affected is Star Wars: Episode I: The Phantom Menace (Rev 1) [SLUS_008.84, ], http://redump.org/disc/67704/"
     validations:
