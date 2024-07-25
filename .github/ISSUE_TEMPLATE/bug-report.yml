@@ -19,9 +19,9 @@ body:
       options:
         - label: I have checked existing [__DKWDRV issues__](https://github.com/DKWDRV/DKWDRV/issues) for duplicates and found none.
         - label: I am using [latest version](https://github.com/DKWDRV/DKWDRV/releases)
-        - label: CD/USB : I have checked my game redump hashes/verified it is a good dump.
-        - label: USB : I have merged the bin tracks (if game has several ones).
-        - label: USB : I have made sure that game is defragemented. You can boot even fragemented games but 99% chance of random failure.
+        - label: CD/USB - I have checked my game redump hashes/verified it is a good dump.
+        - label: USB - I have merged the bin tracks (if game has several ones).
+        - label: USB - I have made sure that game is defragemented. You can boot even fragemented games but 99% chance of random failure.
 
   - type: textarea
     id: explanation
