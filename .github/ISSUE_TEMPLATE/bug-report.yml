@@ -24,10 +24,19 @@ body:
         - label: USB - I have made sure that game is defragemented. You can boot even fragemented games but 99% chance of random failure.
 
   - type: textarea
+    id: context-and-data
+    attributes:
+      label: Context and extra information
+      description: Information about affected games (Game name, [Game ID], link to redump.org) and expected behavior.
+      placeholder: "eg: Game affected is Star Wars: Episode I: The Phantom Menace (Rev 1) [SLUS_008.84, ], http://redump.org/disc/67704/"
+    validations:
+      required: false
+
+  - type: textarea
     id: explanation
     attributes:
       label: Describe the issue
-      description: A clear and concise description of what the issue is. As much details as possible. We don't know your game bosses!
+      description: A clear and concise description of what the issue is. As much details as possible. We don't know your game bosses! Fill game info at the end.
       placeholder: My issue is...
     validations:
       required: true
@@ -76,11 +85,4 @@ body:
         - USB
         - NA/Other
     
-  - type: textarea
-    id: context-and-data
-    attributes:
-      label: Context and extra information
-      description: Information about affected games (Game name, [Game ID], link to redump.org) and expected behavior
-      placeholder: "eg: Game affected is Star Wars: Episode I: The Phantom Menace (Rev 1) [SLUS_008.84, ], http://redump.org/disc/67704/"
-    validations:
-      required: false
+
