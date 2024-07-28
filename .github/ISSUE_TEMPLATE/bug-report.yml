@@ -75,6 +75,16 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: dkwdrv_options
+    attributes:
+      label: "DKWDRV"
+      description: "Post any special options you use in DKWDRV. You can see them in options menu."
+      placeholder: "Polygon, VERSTR, Analog patching, etc.. You can also attach photos."
+    validations:
+      required: true
+
+
   - type: dropdown
     id: mode
     attributes:
