@@ -337,6 +337,12 @@ There are several this can be done:
 
 - Donations (some people offered donations before but now we have a way for them)
     - [![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/DKWDRV)
+    - A BIG THANK YOU goes to our current supporters (listed alphabetically, past and current ones):
+      - Beandip
+      - Manel
+      - emoji de fuego
+      - gaopringao
+        
 - Testing and documenting problematic games and features. There are so much games out there it's impossible to test everything.
   
 <br>
