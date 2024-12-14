@@ -339,6 +339,7 @@ There are several this can be done:
     - [![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/DKWDRV)
     - A BIG THANK YOU goes to our current supporters (listed alphabetically, past and current ones):
       - Beandip
+      - JonasK
       - Manel
       - emoji de fuego
       - gaopringao
