@@ -342,6 +342,7 @@ There are several this can be done:
       - Manel
       - emoji de fuego
       - gaopringao
+      - JonasK
         
 - Testing and documenting problematic games and features. There are so much games out there it's impossible to test everything.
   
