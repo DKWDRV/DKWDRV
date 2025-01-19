@@ -152,10 +152,11 @@ and other SFX might be missing from the game.
 <br>
 
 ## Future Features Planned (no ETA)
+- ExFAT USB drivers (were implemented but fail to recognize some USB devices while current FAT32 drivers work fine)
 - Higher videomodes ingame (investigating)
 - XA/CDDA Audio (partly done)
 - Disc Swap (partly done)
-- VMC from USB
+- VMC from USB for CD and USB loading (USB VMC write code done)
 - IGR
 - Custom BIOS
 - ....
@@ -164,6 +165,25 @@ and other SFX might be missing from the game.
 <br>
 
 ## Changelog
+
+<details>
+  <summary>1.7.6b</summary>
+
+<br>
+
+- Fixed a bug with AUTO video mode change. Now adapters even sync better.
+- Fixed a bug with USB menu gamelist. Over 255 games are now supported with no problem.
+- Menu X/Y position of the menu are now adjusted for better view on CRT monitors and for better showing the selection arrow.
+- GPU: Fixed an timer bug which might had impacted different games from CD and USB.
+- Expanded internal config config for all releases of Star Wars: Episode I. #70
+- USB: OHCI Reset code improved to be more stable in detecting devices.
+- USB: OHCI read code OPTIMIZED to the extreme. Can positively impact framerates on particular games.
+- USB: DMA emulation improved.
+- USB: CDROM register emulation bugfix.
+- USB: CDROM DMA improved. Fixes DDR games.
+- USB: Added separate code for ReadS command.
+
+</details>
 
 <details>
   <summary>1.7.6</summary>
