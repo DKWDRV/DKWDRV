@@ -138,7 +138,7 @@ and other SFX might be missing from the game.
 - Remember that this version is VERY BETA. It is still WIP.
 - Try different USB.
 - Try USB directly (no usb hub or extra usb type device connected at same time).
-- Try a different USB device and make sure your usb device keeps a consistent connection. One of the signs that the connection isn't consistent is the mass: directory not being populated in uloadelf without reinserting the device, or usb games list in the DKWDRV not being populated unless you reinsert the device.
+- Try a different USB drive and make sure your usb drive keeps a consistent connection. OPL is much more tolerant of USB problems than the current versions of DKWDRV and drives that work for OPL might not work for DKWDRW. One of the signs that the connection isn't consistent is the mass: directory not being populated in uloadelf without reinserting the drive, or getting a USB not found! message in DKWDRV games list. Even though reinserting the USB connection will refresh the USB game list, the game loading will likely freeze on a black screen.
 - Verify game structure and installation is correct.
 - Verify game is defragmented.
 - Play around with game options, setting VERSTR to game default region is a good idea.
