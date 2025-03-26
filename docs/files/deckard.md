@@ -40,6 +40,13 @@ DECKARD patent was filed 7 days later than the first build timestamp 20050620.
 
 <br>
 
+|Hardware Patent|
+|:---|
+|[JP Patent #JP2007048020A](https://patents.google.com/patent/JP2007048020A/en)|
+|[US PATENT #US20070038435A1](https://patents.google.com/patent/US20070038435A1/en)|
+
+<br>
+
 
 |Address|Name|
 |:---:| :---|
