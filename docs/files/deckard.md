@@ -33,10 +33,18 @@ All models have the same exact code, only the timestamp changes.
 
 DECKARD patent was filed 7 days later than the first build timestamp 20050620. 
 
-|Patent|
+|JP Patent 2004|
+|:---|
+|[JP Patent #JP4409360B2](https://patents.google.com/patent/JP4409360B2/en)|
+
+
+<br>
+
+|Patent 2005|
 |:---|
 |[JP Patent #4397858B2](https://patents.google.com/patent/JP4397858B2/en)|
 |[US PATENT #7756697B2](https://patents.google.com/patent/US7756697B2/en)|
+
 
 <br>
 
