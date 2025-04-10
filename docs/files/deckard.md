@@ -55,6 +55,15 @@ DECKARD patent was filed 7 days later than the first build timestamp 20050620.
 
 <br>
 
+<br>
+
+|APU Patent|
+|:---|
+|[JP Patent #JP3938580B2](https://patents.google.com/patent/JP3938580B2/en)|
+|[US PATENT #US7818162B2](https://patents.google.com/patent/US7818162B2/en)|
+
+<br>
+
 
 |Address|Name|
 |:---:| :---|
