@@ -360,10 +360,12 @@ There are several this can be done:
     - A BIG THANK YOU goes to our current supporters (listed alphabetically, past and current ones):
       - Beandip
       - JonasK
+      - Koma
       - Manel
       - Null
       - emoji de fuego
       - gaopringao
+      - ia
         
 - Testing and documenting problematic games and features. There are so much games out there it's impossible to test everything.
   
