@@ -167,6 +167,23 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6c</summary>
+
+<br>
+
+- #87 You can now ignore disc scanning by pressing [] on the Disc Scan menu. Useful for some failing drives.
+- #87 Pad buttons repeat implemented. You can now hold buttons down to keep scrolling and also wraparound menus.
+- Fixed a bug with USB loading detecting correct game ID from games with only PSX.EXE and no SYSTEM.CNF
+- #58 added Volume Timestamp PSX.EXE game identifaction from [user community](https://github.com/DKWDRV/DKWDRV/issues/58#issuecomment-2753057972)  feedback. Credit to pcm720, alex free, niemasd
+- #58 the following [games](https://github.com/pcm720/OSDMenu/blob/main/launcher/include/game_id_table.h) will register with game ID for MCID devices and their PSXCRC32 configs are obsolete now(check if you use them).
+- #58 GAME ID MC devices supported now, will be send from mmceman module before switching to PS1 mode to allow VMC mounting for PS1 games(CD and USB). If no ID then DKWDRV will be send or PSXCRC32
+- #81 multiple USB devices supported, at max 2, no hub support yet. If both USB have games user will be prompted to choose USB.
+- #81 PPC USB code will now identify the USB from the hardware port number, less trouble with extra connected USB devices.
+- #6 made PPC USB code SET_INTERFACE fix.
+</details>
+
+
+<details>
   <summary>1.7.6b</summary>
 
 <br>
