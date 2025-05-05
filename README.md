@@ -381,6 +381,8 @@ There are several this can be done:
       - Manel
       - Null
       - PC-Maniak
+      - TetrisTyp
+      - Tschicki
       - emoji de fuego
       - gaopringao
       - ia
