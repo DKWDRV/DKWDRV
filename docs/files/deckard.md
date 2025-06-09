@@ -75,7 +75,7 @@ DECKARD patent was filed 7 days later than the first build timestamp 20050620.
 
 <br>
 
-|PVR|Model|
+|Model|PVR|
 |:---:| :---|
 SCPH-75000 | 52621890
 SCPH-77000 | 52621890
