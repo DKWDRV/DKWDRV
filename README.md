@@ -167,6 +167,22 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6d</summary>
+
+<br>
+
+- #82 exFAT support with multiple USB devices is now available!
+- #96 removed MMCE polling wait to make bootup faster(saves 20 seconds on bootup).
+- GPU: Fixed a DI/EI major issue randomly impacting gpu emulation on DECKARD models. Improved framerate!
+- GPU: Fixed all sceGsSyncPath() to be properly in sync!
+- GPU: Fixed aligment issues with 128bit VIF data.
+- GPU: Vblank hung times closer to the original!
+- Many misc minor fixes!
+</details>
+
+
+
+<details>
   <summary>1.7.6c</summary>
 
 <br>
