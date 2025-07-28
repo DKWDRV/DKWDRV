@@ -167,6 +167,25 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6e</summary>
+
+<br>
+
+- Fixed a bug with Timer1 intr handler. PS2SDK issue, impacted GPU emulation on all models and games randomly! More framerate!
+- PGIF/DECKARD CD and USB impacted! Everything runs more solid, better, faster, as it should be!
+- #61 Random init Possible fix!
+- GPU: Fixed clut_handler causing flickering!
+- GPU: Fix specialcmd() sindex emulation order!
+- GPU: Made emulation faster!
+- Fixed blockwrite cmd!
+- Fixed a bug with disc logo region check not working properly!
+- Fixed usage of mtsab/mtsah.
+- Launch Original PS1DRV option will now ask if you want to load DECKARD patch before the driver. Useful for testing games!
+- A lot of GPU problematic games run fine now: Tekken 3, Lunar 2, etc properly fixed
+</details>
+
+
+<details>
   <summary>1.7.6d</summary>
 
 <br>
