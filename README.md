@@ -167,6 +167,22 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6f</summary>
+
+<br>
+
+- PGIF consoles: If component fix is selected and VMODE is set to Auto it will fallback to console default video mode! Force the videomode to other region to make it work. This change was added because COMPONENT FIX needs to access DVE regs over the IOP which will cause a stall on EE! Only impacts PGIF with COMPONENT fix mode!
+- For this console only you need to set fixed PER GAME. Fixes #107
+- PGIF/DECKARD - A bug with mecha values not being loaded from internal database has been fixed. All games having mecha configs in internal database were impacted. Sorry, recheck the list of games [here](https://github.com/DKWDRV/DKWDRV/blob/main/docs/files/config_deckard.md) and [here](https://github.com/DKWDRV/DKWDRV/blob/main/docs/files/config_pgif.md) and edit mecha value to it.
+- PGIF/DECKARD - Moved AutoVMode code elsewhere, should be more stable but needs testing.
+- PGIF - Fix PGIFIntr handler.
+- PGIF - Fix bug with GPU A0 sub cmd. Fixes #108 #86 #98.
+- USB - Added IGR combo. Keep R1+R2+L1+L2+SELECT pressed for ~4 seconds for poweroff. Keep R1+R2+L1+L2+START pressed for ~4 seconds for console reset.
+- Let's close some issues and move on from fixing bugs! October is not over yet...
+</details>
+
+
+<details>
   <summary>1.7.6e</summary>
 
 <br>
@@ -336,6 +352,9 @@ For DECKARD consoles users can press specific combos even while ingame.
 - L1 + L2 + R1 + R2  + CROSS(X) Will toggle Polygon MMIN filtering. Up to 7 values can be used. Once 7 is reached it's wraps back to 0.
 - L1 + L2 + R1 + R2  + SQUARE Will toggle Sprite MMAG filtering 2. Just 0 and 1. Results vary. Original drivers was never applying filtering to sprites.
 - L1 + L2 + R1 + R2  + CIRCLE Will toggle Sprite MMIN filtering. Up to 7 values can be used. Once 7 is reached it's wraps back to 0. Results vary. Original drivers was never applying filtering to sprites.
+
+- L1 + L2 + R1 + R2  + SELECT keep pressed for ~4 seconds: Console poweroff. ONLY FROM USB.
+- L1 + L2 + R1 + R2  + START keep pressed for ~4 seconds: Console reset. ONLY FROM USB.
 </details>
 
 <br>
