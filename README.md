@@ -167,6 +167,15 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6g</summary>
+
+<br>
+
+- PGIF/DECKARD consoles: More changes to automatic video mode that was again breaking some PGIF and DECKARD randomly. Should fix #116, #107.  Let's hope this is the last of bugs for videomodes and PGIF models.
+
+</details>
+
+<details>
   <summary>1.7.6f</summary>
 
 <br>
