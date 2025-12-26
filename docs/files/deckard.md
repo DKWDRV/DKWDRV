@@ -6,7 +6,7 @@
 
 # DECKARD
 
-DECKARD is a IBM PowerPC custom CPU (405/440/4xx custom hybrid build perhaps) running at 440 MHz (confirmed) included in the following PS2 models:
+DECKARD is a IBM PowerPC custom CPU (PPC440GX custom hybrid build) running at 440 MHz (confirmed) included in the following PS2 models:
 
 |Model|
 |:---|
