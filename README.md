@@ -165,6 +165,45 @@ and other SFX might be missing from the game.
 <br>
 
 ## Changelog
+<details>
+  <summary>1.7.6i</summary>
+
+<br>
+
+- Always try to force the set controller in an unlocked digital state. Official HW  resets during the PS1 mode switch and logo show-up due to a watchdog timer that 
+        some devices do not implement properly (like the BlueRetro controller). Should fix #133."
+        
+- Added early USB OHCI reset.
+- Added dev9 poweroff before reset to PS1 mode.
+- OSD History updating with game title ID when booting games from CD & USB is now available (configurable option). If ID is "???" or "PSX.EXE" then "DKWDRV" will be sent as ID. Fixes #115.
+- Menu -> Options -> Memory Card must be configured to allow SD2PSX sending or OSD History saving. By default both disabled so remember to reset them and save config.
+- The options are None, MMCEMAN, OSD History, MMCEMAN -> OSD History, and OSD History -> MMCEMAN for different orders if needed. Fixes #115.
+- Options need to be configured for both CD and USB. Some users might not like the history update from USB, so they can ignore it.
+- CD AUTOBOOT feature added. It will automatically scan and boot the disc. No warnings if no disc is inserted or license/model mismatch! #136
+- Added the "-cdboot" argument for enabling CD AUTOBOOT (argv[0] must be bootpath or empty).
+- CD Autoboot can also be enabled in the Options menu and saved as General Config.
+- If the option is not enabled, press and hold START to temporarily force it and autoboot the CD game.If any is enabled (saved config or passed argument), press and hold START on boot to disable and get the main menu.
+- Once in the main menu, go to Options, and you will see it disabled; save the General Config to disable it permanently.
+- GS emulation fixes have been implemented! This had to take a serious long time to debug and discover what is causing it.
+- A bug fix with a minor issue for 368 hres pixels has been implemented.
+- Automatic vmode with a component fix for PGIF consoles has been restored.
+- GS vmode fixes have been implemented. Fixes #116, #86, #74, #61, and #128.
+- GS mode resolution is now correct, and the component fix aswell. Everything looks a million times better; also, it fixes #134.GS components fix now runs stuff in Progressive mode and tries to center the display where it should be.
+- This might mean the image looks a bit different in size, but it looks a million times better!
+- GS is still an obscure area, so we can expect bugs on it. Still, it looks so good now, and everything is properly centered (check your XY offsets)!
+- A new GUI is now in place. The background image is AI-generated, so it is what it is. PS2Ident was helpful in graphics stuff.
+- This has caused a file size increase, but it allows us to load PNGs if we need them for games in the future.
+- Added USB MultiDisc support, max 8 discs! Fixes #100.
+- To use it, go to the USB menu and press SELECT to toggle and select the disc needed in THAT specific order.
+- The discs selected will be highlighted and prefixed with [Dx], where x is the disc number.
+- The discs are loaded in that specific order.*All used discs must be defragmented and valid!
+- *When TEST Config is used from Options, then one disk will be selected.
+- *When more than 1 disc is selected, only the config from Disc 1 is loaded and applied.To switch discs in-game, you need to cycle the disc tray. Press only once L1+R1+L2+R2+SELECT+START.
+- This opens the tray. Press the combo again just once after a bit, and it will close the tray.
+- Each time the tray is closed, the disc inserted is the next in line in the order you toggled them in the menu.
+- If there is only one disc, then it will add back the same disc.The system is a bit fragile; do not spam the combos; press them just once and wait a bit.
+</details>
+
 
 <details>
   <summary>1.7.6g</summary>
@@ -442,6 +481,7 @@ There are several this can be done:
       - JonasK
       - Koma
       - Manel
+      - Nasser
       - Null
       - Nuno
       - PC-Maniak
