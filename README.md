@@ -165,6 +165,23 @@ and other SFX might be missing from the game.
 <br>
 
 ## Changelog
+
+<details>
+  <summary>1.7.6j</summary>
+
+<br>
+
+- Disable all breakpoints on boot.
+- PGIF consoles SSRT line reset race condition fixed, was present in original drivers too! Fixes #116, #143, #61, #74 
+- Added Exit option in the main menu #144
+- If argv[0] is rom0:PS1DRV then it will automatically autoboot cd, same idea as having -cdboot argument. #139
+- USB: fix when copying multidisc tracks data from EE to PPC memory.
+- GS: Added some SMODE1 mode improvements.
+- GS: Added a better Component mode fix which keeps everything intact. Fixes #145, #142, #141
+- Now the option Component Fix can be toggle from Disabled/Enabled/Progressive Mode (wip) if you still want to try the experimental mode.
+</details>
+
+
 <details>
   <summary>1.7.6i</summary>
 
@@ -478,6 +495,8 @@ There are several this can be done:
     - [![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/DKWDRV)
     - A BIG THANK YOU goes to our current supporters (listed alphabetically, past and current ones):
       - Beandip
+      - Borizzle
+      - caden
       - JonasK
       - Koma
       - Manel
