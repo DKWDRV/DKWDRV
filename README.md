@@ -167,6 +167,17 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6k</summary>
+
+<br>
+
+- GS auto mode switch, more bug fixes.
+- Component Fix improved, no more constant TV status bar of the mode, hopefully it works fine on all modes. #145 #141 #142 #134
+- PGIF cd boot black screen, even more bugfix, once more SPU init issues likely. #116 #61 #74
+</details>
+
+
+<details>
   <summary>1.7.6j</summary>
 
 <br>
