@@ -167,6 +167,15 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6m</summary>
+
+<br>
+
+- More PGPU videomode fixes especially for PGIF consoles.
+
+</details>
+
+<details>
   <summary>1.7.6L</summary>
 
 <br>
