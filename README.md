@@ -167,6 +167,16 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6L</summary>
+
+<br>
+
+- Fix an issue with expection handler not showing values correctly.
+- More GS fixes for PGIF consoles and for Component fix, let's hope nothing breaks!
+</details>
+
+
+<details>
   <summary>1.7.6k</summary>
 
 <br>
