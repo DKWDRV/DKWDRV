@@ -152,12 +152,12 @@ and other SFX might be missing from the game.
 <br>
 
 ## Future Features Planned (no ETA)
-- ExFAT USB drivers (were implemented but fail to recognize some USB devices while current FAT32 drivers work fine)
-- Higher videomodes ingame (investigating)
+- DONE: ExFAT USB drivers (were implemented but fail to recognize some USB devices while current FAT32 drivers work fine)
+- DONE: Higher videomodes ingame (investigating)
 - XA/CDDA Audio (partly done)
-- Disc Swap (partly done)
+- DONE: Disc Swap (partly done)
 - VMC from USB for CD and USB loading (USB VMC write code done)
-- IGR
+- DONE: IGR
 - Custom BIOS
 - ....
 
@@ -165,6 +165,16 @@ and other SFX might be missing from the game.
 <br>
 
 ## Changelog
+
+<details>
+  <summary>1.7.6n</summary>
+
+<br>
+
+- PGPU videomode mode fixed once again, GS is simply too much obscure.
+- USB: Do not reinit some part of the OHCI after PS1 mode reset. #101
+</details>
+
 
 <details>
   <summary>1.7.6m</summary>
