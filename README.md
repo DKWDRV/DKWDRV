@@ -167,6 +167,17 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6o</summary>
+
+<br>
+
+- PGPU videmode fixes for NTSC. #145
+- PGPU smode 1 more changes.
+- USB: Misc init changes. #101
+</details>
+
+
+<details>
   <summary>1.7.6n</summary>
 
 <br>
