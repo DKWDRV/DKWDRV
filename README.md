@@ -167,6 +167,37 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6p</summary>
+
+<br>
+
+- Simulate rom0:PS1DRV and rom0:VERSTR read from the BIOS before game launch. Might help some weird modchips #61
+- Added new config in the Options menu for CD mode, AUTO, Scan, and Skip. #150
+- Allow scanning different types of discs.
+- Issue a sceCdBreak before booting in PS1 mode.
+- Spin the motor before the PS1 mode switch. Possible #61 fix.
+- Fixed the exit option to mc BOOT.ELF, which was broken. #150
+- GS: Made some changes to CSR Finish event polling!
+- PGIF GS emulated bug fixes to localhost cmd. Fixes a couple of games from #86.
+- USB init changes; if USB is not found, a third debug screen appears with more raw data. #101
+- From now on starts a series of USB CD Emu rewrites. Each release will fix and break USB games until all is sorted out.
+- The details are too much to list.
+- USB CD Emu Rewrite STEP #1:
+- -Make pending CD DSP intr trigger instant instead of polling.
+- -Make pending cmd execute during read states.
+- -Add a custom TLB for faster DMA copying and endian issues.-Add better simulated times (WIP).
+- -COMPLETE REWRITE so everything and every game is impacted!
+- -Fixes many graphical issue or improves them (Sheep Raider, Fighting Force, etc.) 
+- -Fixes many games with SetLoc issues (NASCAR, Parasite Eve II, Tony Hawk's 2, etc..)
+- --
+- This should be considered just a BETA release of the new CD emu system.
+- Some pending parts: tray open/disc switching, stutter FMV, reset cmd sensitivity, etc.
+- We are aware of most issues and will release further versions (much faster after gathering users' reports) to fill things.
+- Keep reporting bugs. There is a lot more to optimize and implement for getting this running smoothly.
+</details>
+
+
+<details>
   <summary>1.7.6o</summary>
 
 <br>
@@ -549,6 +580,7 @@ There are several this can be done:
       - Borizzle
       - caden
       - JonasK
+      - Karl
       - Koma
       - Manel
       - Nasser
