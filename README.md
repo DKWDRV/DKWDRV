@@ -167,6 +167,24 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6q</summary>
+
+<br>
+
+- Fixed a crash with GIF packet allocation. Fixes #156
+- Fixed Exit option MC1. #150
+- Reverted the disc scan order to original way! #162
+- Automatic and user options for X/O or X triangle buttons in the menu. #159
+- USB CD Emu Rewrite STEP #2:
+- -Work with uncached TLB instead of constantly flushing caches for USBI OHCI.
+- -Reduce SeekCmd get sector data USB read to be faster.
+- -Major USBI OHCI TD system rewrite, saves like 3-4 ms, were causing a lot of problems.
+- -Impacts all games, more system stability in almost all aspects, slowdowns, flickering, controller removal issues, etc.
+- -Still more room for improvement; the USB emu rewrite is not over yet!
+</details>
+
+
+<details>
   <summary>1.7.6p</summary>
 
 <br>
