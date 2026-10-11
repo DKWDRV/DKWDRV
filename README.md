@@ -118,7 +118,7 @@ The first time you run a game it will try to create a config for it by analyzing
 
 <br>
 
-- USB must be FAT32.
+- FAT32/exFat usb.
 - All .bin tracks must be merged. Use IsoBuster or CDMage.
 - .cue file must be provided and the .bin name must match the main binary file.
 - All bin dumps must be 2352 sector sizes.
@@ -165,6 +165,20 @@ and other SFX might be missing from the game.
 <br>
 
 ## Changelog
+
+<details>
+  <summary>1.7.6s</summary>
+
+<br>
+
+- Minor USB reset change before IOP reset to hopefully make USB detection easier.
+- Minor string changes #159
+- Another fix for menu drawing error. #156
+- USB CD Emu Rewrite STEP #4:
+- -Fix some bugs on OHCI usb init and make things boot a bit faster! #101
+- -Most failing or stuck games seem to be failing on reset cmd, still work to do on that.
+</details>
+
 
 <details>
   <summary>1.7.6q</summary>
