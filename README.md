@@ -167,6 +167,22 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6t</summary>
+
+<br>
+
+- Added Dithering config as Global setting. #165
+- Added Dithering Matrix Table config under Options - Video Options. Per game only.
+- Added different USB menu drawing logic. #156
+- Add better EI/DI than the original PS1DRV
+- USB CD Emu Rewrite STEP #5:
+- PPC ISTAT handler properly hooked.
+- USB init is now faster and more bugfixes. #101
+- Next version will have much more time syncing improvements.
+</details>
+
+
+<details>
   <summary>1.7.6s</summary>
 
 <br>
