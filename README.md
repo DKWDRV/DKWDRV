@@ -167,6 +167,20 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6u</summary>
+
+<br>
+
+- USB CD Emu Rewrite STEP #6:
+- -Major sync times change, impacts everything!
+- -Many FMVs now run in sync and the seek/read times are more accurate.
+- -PS1 logo boots normally now, after such a long time.
+- -Still some issues with DMA timing and usb read polling but I am releasing this as a sneak peak for the future.
+- -I expect a lot of random crashes/hangs but it is fine till i sort the timing further
+</details>
+
+
+<details>
   <summary>1.7.6t</summary>
 
 <br>
