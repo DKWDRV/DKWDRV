@@ -6,7 +6,7 @@
 
 # DECKARD
 
-DECKARD is a IBM PowerPC custom CPU (PPC440GX custom hybrid build) running at 440 MHz (confirmed) included in the following PS2 models:
+DECKARD is a IBM PowerPC 440GX custom CPU running at 440 MHz (confirmed) included in the following PS2 models:
 
 |Model|
 |:---|
@@ -83,6 +83,17 @@ SCPH-90000 | 7FCF1840
 
 <br>
 
+
+PPC440GX v1.04 Manual for PPC440GX which is DECKARD. AMCC Proprietary.
+
+https://github.com/DKWDRV/DKWDRV/blob/main/docs/files/PPC440GX_UM2001_v1_04.pdf
+
+Full credit to FreeCalypso.org for hosting the PPC440GX Test board ISO which is where this file comes from.
+https://www.freecalypso.org/pub/PowerPC/4xx/
+
+
+
+<br>
 
 
 |Address|Name|
