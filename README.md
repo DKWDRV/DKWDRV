@@ -167,6 +167,31 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6v</summary>
+
+<br>
+
+- Fixed a GPU emulation regression breaking games in the last released version!
+- GPU transfers were getting corrupted. Impacts PGIF/DECKARD on both CD and USB!
+- DECKARD: New version for PPC ISTAT hook! Impacts CD and USB.
+- USB CD Emu Rewrite STEP #7:
+- -Add some wait time for USB to get ready on boot. #167
+- -Make USB DMA priority higher.
+- -Fix a bug with seek cycles calculation.
+- -Fix reset cmd 0x0a wait seek polling!
+- -Fix reset cmd 0x1e wrong intr type!
+- -Fix stop cmd 0x08 wrong intr cycles typo!
+- -Fix seekLoc cmd polling USB read finish to get sector info.
+- -Fix GetLocL response correct data.
+- -Add sector header sanity check.
+- -USB Read sector cache added, reducing cache from 5/6 sector reads (worst cases) to 4/5 sector reads.
+- -CD DMA uses real CDROM DMA to simulate the times.
+- Still a lot more work to do, but major progress once again.
+- The next update will optimize the read times even more!!!
+</details>
+
+
+<details>
   <summary>1.7.6u</summary>
 
 <br>
