@@ -167,6 +167,23 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6w</summary>
+
+<br>
+
+- PPC Added USB Init Delay config in Options. Some USB need some delay to init!
+- Default is 4 seconds, make it higher if you get black screen on launching USB game #167
+- USB CD Emu Rewrite STEP #8:
+- -Reduce PPC patch size.
+- -New USB Sector Read Code
+- -New DMA code
+- -Fixed MotorOn cycles
+- -New timer interrupt approach
+- Impacts every game!
+</details>
+
+
+<details>
   <summary>1.7.6v</summary>
 
 <br>
