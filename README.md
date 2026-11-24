@@ -167,6 +167,23 @@ and other SFX might be missing from the game.
 ## Changelog
 
 <details>
+  <summary>1.7.6y</summary>
+
+<br>
+
+- MMCME IGR reset protocol fix. #195, #122
+- Added Global Videomode in options. #200
+- Load Original PS1DRV, terminate libraries before launch.
+- Modchip fixes - restore the original kernel/syscalls and weird patches.
+- Modchip Matrix/Modbo: applies PS1 mode and cycles the tray for CD games.
+- Modchip Matrix/Modbo: option to send PS1 mode in DECKARD USB games (unconfirmed if it matters from USB mode)
+- USB CD Emu Rewrite STEP #10:
+- -Minor USB init bug fixes. #198, #199-USB Sector Cache bug fix. #147
+- -Misc changes.
+- -Still working on it; let's see the next release.
+</details>
+
+<details>
   <summary>1.7.6w</summary>
 
 <br>
